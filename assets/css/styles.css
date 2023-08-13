@@ -57,7 +57,7 @@ a {
 
 .section-desc {
     margin-top: 18px;
-    max-width: 468px;
+    width: 468px;
     color: #575F66;
     font-size: 1.8rem;
     font-weight: 300;
@@ -272,6 +272,7 @@ header {
 .service__img {
     width: 570px;
     height: 570px;
+    display: block;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -326,4 +327,56 @@ header {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; 
+}
+
+/* Work */
+.work {
+    padding: 100px 0;
+    background-color: #F6FBFF;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work-item {
+    padding: 42px;
+    border: 16px solid #EAF6FF;
+    transition: all .3s;
+}
+
+.work-item:hover {
+    border-color: #2E80CE;
+    transform: translateY(-16px);
+}
+
+.work-item:hover .work__more {
+    color: #2E80CE;
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375C;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; 
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;  
+}
+
+.work__more {
+    margin-top: 18px;
+    color: #575F66;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;  
 }
